@@ -1,5 +1,7 @@
 package com.john.history.mykotlindemo.test
 
 var People.sex:String
-   get() = "female"
-   set(value) =
+   get() = "noooooo"
+   set(value) {
+      name+=value
+   }
