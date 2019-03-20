@@ -9,12 +9,38 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".recycleviewtest.RecycleViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".livedatatest.MediatorLiveDataActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".launchmodetest.ActivityA"
+                android:label="AAA_ActivityA">
+        </activity>
+        <activity
+                android:name=".launchmodetest.LaunchModeActivityMain"
+                android:label="AAA_ActivityMain">
+        </activity>
+        <activity android:name=".livedatatest.LiveDataTestActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".MainActivity">
         </activity>
     </application>
 
