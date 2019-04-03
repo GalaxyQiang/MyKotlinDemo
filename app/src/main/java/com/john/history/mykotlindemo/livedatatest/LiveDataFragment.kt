@@ -35,6 +35,7 @@ class LiveDataFragment : Fragment() {
     private var listener: OnFragmentInteractionListener? = null
     lateinit var mLivedataC: MediatorLiveData<Double>
 
+
     private var observer=Observer<Double>{
         fragment_text.text=it.toString()
     }

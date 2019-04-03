@@ -9,15 +9,32 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".recycleviewtest.RecycleViewActivity">
+        <activity android:name=".livedatatest.ObserveActivity"
+                  android:label="ObserveActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+                android:name=".databindingtest.DatabindingActivity"
+                android:label="DatabindingActivity">
+        </activity>
+        <activity
+                android:name=".fragmentest.FragmentestActivity"
+                android:label="FragmentestActivity">
+        </activity>
+        <activity
+                android:name=".recycleviewtest.RecycleViewActivity"
+                android:label="RecycleViewActivity">
+        </activity>
         <activity android:name=".livedatatest.MediatorLiveDataActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
 
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity
                 android:name=".launchmodetest.ActivityA"
