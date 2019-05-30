@@ -9,8 +9,31 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".livedatatest.ObserveActivity"
-                  android:label="ObserveActivity">
+        <activity android:name=".uitest.UiDemoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".uitest.FullscreenActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_fullscreen"
+                android:theme="@style/FullscreenTheme">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+                android:name=".OkhttpActivity"
+                android:label="OkhttpActivity">
+        </activity>
+        <activity
+                android:name=".livedatatest.ObserveActivity"
+                android:label="ObserveActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

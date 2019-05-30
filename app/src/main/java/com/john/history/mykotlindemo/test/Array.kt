@@ -8,6 +8,5 @@ fun main() {
     var ddd:Set<Int>
     var eee:Map<Int,String>
 
-    Unit
 
 }
