@@ -9,16 +9,19 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity
-                android:name=".uitest.NavActivity"
-                android:label="@string/title_activity_nav">
+        <activity android:name=".uitest.editviewtest.EditerViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".uitest.UiDemoActivity">
+        <activity
+                android:name=".uitest.NavActivity"
+                android:label="@string/title_activity_nav">
 
+        </activity>
+        <activity android:name=".uitest.UiDemoActivity">
         </activity>
         <activity
                 android:name=".uitest.FullscreenActivity"
