@@ -9,17 +9,15 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".uitest.editviewtest.EditerViewActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+        <activity android:name=".fragmentest.FragmentLifeCycleActivity">
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+        </activity>
+        <activity android:name=".uitest.editviewtest.EditerViewActivity">
+
         </activity>
         <activity
                 android:name=".uitest.NavActivity"
                 android:label="@string/title_activity_nav">
-
         </activity>
         <activity android:name=".uitest.UiDemoActivity">
         </activity>
@@ -43,11 +41,7 @@
         <activity
                 android:name=".livedatatest.ObserveActivity"
                 android:label="ObserveActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity
                 android:name=".databindingtest.DatabindingActivity"
@@ -62,11 +56,7 @@
                 android:label="RecycleViewActivity">
         </activity>
         <activity android:name=".livedatatest.MediatorLiveDataActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity
                 android:name=".launchmodetest.ActivityA"
@@ -86,6 +76,11 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 
