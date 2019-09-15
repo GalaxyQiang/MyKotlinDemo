@@ -1,9 +1,6 @@
 package com.john.history.mykotlindemo.test.coroutine
 
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.async
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 import java.nio.channels.AsynchronousByteChannel
 import kotlin.concurrent.thread
 
@@ -11,10 +8,21 @@ fun main() {
 //    GlobalScope.async {
 //        val list=(1..5).map {async { 10*it } }
 //    }
-
+    println("Begin")
+    runBlocking {
     repeat(10){
-        println(it)
+        val job=launch {
+            kotlinx.coroutines.delay(3000)
+            println(it)
+        }
+//        job.join()
+        println("setting launch"+it)
     }
+//    kotlinx.coroutines.delay(3000)
+}
+    println("main end")
+
+
 }
 
 private fun launchX() {
