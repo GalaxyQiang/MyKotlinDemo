@@ -1,5 +1,5 @@
 package com.john.history.mykotlindemo.databindingtest
-import android.databinding.ObservableInt
+import androidx.databinding.ObservableInt
 data class Score(
     var name: String,
     var performance: Int,

@@ -1,8 +1,8 @@
 package com.john.history.mykotlindemo.databindingtest
 
-import android.databinding.DataBindingUtil
-import android.databinding.ObservableInt
-import android.support.v7.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ObservableInt
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.john.history.mykotlindemo.R
 import com.john.history.mykotlindemo.databinding.ActivityDatabindingBinding

@@ -1,7 +1,7 @@
 package com.john.history.mykotlindemo.fragmentest
 
 import android.content.Context
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.john.history.mykotlindemo.R
 import kotlinx.android.synthetic.main.activity_fragmentest.*

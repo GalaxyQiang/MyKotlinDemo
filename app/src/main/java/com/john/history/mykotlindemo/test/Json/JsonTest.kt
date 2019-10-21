@@ -1,6 +1,6 @@
 package com.john.history.mykotlindemo.test.Json
 
-import android.arch.lifecycle.MediatorLiveData
+import androidx.lifecycle.MediatorLiveData
 import com.google.gson.Gson
 import java.io.*
 

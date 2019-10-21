@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.john.history.mykotlindemo">
+        package="com.john.history.mykotlindemo">
 
     <application
             android:allowBackup="true"
@@ -9,18 +9,22 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".fragmentest.FragmentLifeCycleActivity">
+        <activity android:name=".viewmodel.ViewModelActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".id.IDActivity">
 
         </activity>
-        <activity android:name=".uitest.editviewtest.EditerViewActivity">
-
-        </activity>
+        <activity android:name=".fragmentest.FragmentLifeCycleActivity" />
+        <activity android:name=".uitest.editviewtest.EditerViewActivity" />
         <activity
                 android:name=".uitest.NavActivity"
-                android:label="@string/title_activity_nav">
-        </activity>
-        <activity android:name=".uitest.UiDemoActivity">
-        </activity>
+                android:label="@string/title_activity_nav" />
+        <activity android:name=".uitest.UiDemoActivity" />
         <activity
                 android:name=".uitest.FullscreenActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
@@ -36,36 +40,26 @@
         </activity>
         <activity
                 android:name=".OkhttpActivity"
-                android:label="OkhttpActivity">
-        </activity>
+                android:label="OkhttpActivity" />
         <activity
                 android:name=".livedatatest.ObserveActivity"
-                android:label="ObserveActivity">
-
-        </activity>
+                android:label="ObserveActivity" />
         <activity
                 android:name=".databindingtest.DatabindingActivity"
-                android:label="DatabindingActivity">
-        </activity>
+                android:label="DatabindingActivity" />
         <activity
                 android:name=".fragmentest.FragmentestActivity"
-                android:label="FragmentestActivity">
-        </activity>
+                android:label="FragmentestActivity" />
         <activity
                 android:name=".recycleviewtest.RecycleViewActivity"
-                android:label="RecycleViewActivity">
-        </activity>
-        <activity android:name=".livedatatest.MediatorLiveDataActivity">
-
-        </activity>
+                android:label="RecycleViewActivity" />
+        <activity android:name=".livedatatest.MediatorLiveDataActivity" />
         <activity
                 android:name=".launchmodetest.ActivityA"
-                android:label="AAA_ActivityA">
-        </activity>
+                android:label="AAA_ActivityA" />
         <activity
                 android:name=".launchmodetest.LaunchModeActivityMain"
-                android:label="AAA_ActivityMain">
-        </activity>
+                android:label="AAA_ActivityMain" />
         <activity android:name=".livedatatest.LiveDataTestActivity">
 
             <!-- <intent-filter> -->
@@ -75,13 +69,7 @@
             <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

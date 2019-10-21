@@ -10,4 +10,5 @@ fun main() {
         println(i)
     }
     var mlist= intArrayOf(1,3,5)
+
 }

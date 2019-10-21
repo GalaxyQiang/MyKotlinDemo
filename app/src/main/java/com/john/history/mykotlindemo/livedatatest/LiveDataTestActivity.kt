@@ -1,8 +1,8 @@
 package com.john.history.mykotlindemo.livedatatest
 
-import android.arch.lifecycle.MediatorLiveData
+import androidx.lifecycle.MediatorLiveData
 import android.net.Uri
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.john.history.mykotlindemo.R
 import java.util.Random

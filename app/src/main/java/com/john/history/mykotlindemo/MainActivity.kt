@@ -1,8 +1,8 @@
 package com.john.history.mykotlindemo
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_recycle_view.*
 
@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         val adapter=MainAdapter(data)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        mainRV.layoutManager= LinearLayoutManager(this)
+        mainRV.layoutManager= androidx.recyclerview.widget.LinearLayoutManager(this)
         mainRV.adapter=adapter
     }
 }

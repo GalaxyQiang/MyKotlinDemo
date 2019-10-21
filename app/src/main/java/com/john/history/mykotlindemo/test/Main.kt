@@ -1,6 +1,6 @@
 package com.john.history.mykotlindemo.test
 
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.MutableLiveData
 
 fun main(args: Array<String>) {
     val xiaoming=Student("high school","小明",16)

@@ -1,6 +1,6 @@
 package com.john.history.mykotlindemo.test
 
-import android.support.v7.app.AlertDialog
+import androidx.appcompat.app.AlertDialog
 import java.util.*
 
 

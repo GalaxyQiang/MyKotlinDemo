@@ -1,11 +1,11 @@
 package com.john.history.mykotlindemo.livedatatest
 
-import android.arch.lifecycle.MediatorLiveData
-import android.arch.lifecycle.Observer
+import androidx.lifecycle.MediatorLiveData
+import androidx.lifecycle.Observer
 import android.content.Context
 import android.net.Uri
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.transition.Transition
 import android.view.LayoutInflater
 import android.view.View
@@ -28,13 +28,12 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  *
  */
-class LiveDataFragment : Fragment() {
+class LiveDataFragment : androidx.fragment.app.Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
     private var listener: OnFragmentInteractionListener? = null
     lateinit var mLivedataC: MediatorLiveData<Double>
-
 
     private var observer=Observer<Double>{
         fragment_text.text=it.toString()

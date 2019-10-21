@@ -1,12 +1,12 @@
 package com.john.history.mykotlindemo.uitest.navfragment
 
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
 import android.util.Log
 
-class ViewPagerAdapter(fm: FragmentManager,val fragments:ArrayList<Fragment>) : FragmentPagerAdapter(fm){
-    override fun getItem(p0: Int): Fragment {
+class ViewPagerAdapter(fm: androidx.fragment.app.FragmentManager, val fragments:ArrayList<androidx.fragment.app.Fragment>) : androidx.fragment.app.FragmentPagerAdapter(fm){
+    override fun getItem(p0: Int): androidx.fragment.app.Fragment {
         Log.d("AAA","getItem"+p0.toString())
         return fragments.get(p0)
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
