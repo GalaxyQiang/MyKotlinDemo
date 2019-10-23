@@ -13,10 +13,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Switch
 import android.widget.TextView
+import com.john.history.mykotlindemo.coroutine.CoroutineActivity
 import com.john.history.mykotlindemo.databindingtest.DatabindingActivity
 import com.john.history.mykotlindemo.fragmentest.FragmentLifeCycleActivity
 import com.john.history.mykotlindemo.livedatatest.LiveDataTestActivity
 import com.john.history.mykotlindemo.recycleviewtest.RecycleViewActivity
+import com.john.history.mykotlindemo.viewmodel.ViewModelActivity
 
 class MainAdapter(var data: List<String>): androidx.recyclerview.widget.RecyclerView.Adapter<MainAdapter.ViewHolder>(){
 
@@ -35,9 +37,11 @@ class MainAdapter(var data: List<String>): androidx.recyclerview.widget.Recycler
         val context:Context=viewholder.button.context
         viewholder.button.text=destination
         when(destination){
+            "CoroutineActivity"-> viewholder.button.setOnClickListener { context.startActivity(Intent(context, CoroutineActivity::class.java)) }
             "FragmentLifeCycleActivity" -> viewholder.button.setOnClickListener { context.startActivity(Intent(context, FragmentLifeCycleActivity::class.java)) }
             "DatabindingActivity" -> viewholder.button.setOnClickListener { context.startActivity(Intent(context, DatabindingActivity::class.java)) }
             "RecycleViewActivity" -> viewholder.button.setOnClickListener { context.startActivity(Intent(context, RecycleViewActivity::class.java)) }
+            "ViewModelActivity" -> viewholder.button.setOnClickListener { context.startActivity(Intent(context, ViewModelActivity::class.java)) }
         }
     }
 

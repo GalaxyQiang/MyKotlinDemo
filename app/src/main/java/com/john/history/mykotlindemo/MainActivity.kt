@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_recycle_view.*
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val data= listOf<String>("RecycleViewActivity","DatabindingActivity","FragmentLifeCycleActivity")
+        val data= listOf<String>("CoroutineActivity","RecycleViewActivity","DatabindingActivity","FragmentLifeCycleActivity","ViewModelActivity")
         val adapter=MainAdapter(data)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

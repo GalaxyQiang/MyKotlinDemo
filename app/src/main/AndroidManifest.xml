@@ -9,16 +9,9 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".viewmodel.ViewModelActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".id.IDActivity">
-
-        </activity>
+        <activity android:name=".coroutine.CoroutineActivity"></activity>
+        <activity android:name=".viewmodel.ViewModelActivity"></activity>
+        <activity android:name=".id.IDActivity"></activity>
         <activity android:name=".fragmentest.FragmentLifeCycleActivity" />
         <activity android:name=".uitest.editviewtest.EditerViewActivity" />
         <activity
@@ -29,21 +22,7 @@
                 android:name=".uitest.FullscreenActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:label="@string/title_activity_fullscreen"
-                android:theme="@style/FullscreenTheme">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN"/> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity
-                android:name=".OkhttpActivity"
-                android:label="OkhttpActivity" />
-        <activity
-                android:name=".livedatatest.ObserveActivity"
-                android:label="ObserveActivity" />
+                android:theme="@style/FullscreenTheme"></activity>
         <activity
                 android:name=".databindingtest.DatabindingActivity"
                 android:label="DatabindingActivity" />
@@ -60,16 +39,14 @@
         <activity
                 android:name=".launchmodetest.LaunchModeActivityMain"
                 android:label="AAA_ActivityMain" />
-        <activity android:name=".livedatatest.LiveDataTestActivity">
+        <activity android:name=".livedatatest.LiveDataTestActivity"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN"/> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
-            <!-- </intent-filter> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
