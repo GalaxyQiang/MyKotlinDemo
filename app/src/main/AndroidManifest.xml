@@ -9,9 +9,13 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".coroutine.CoroutineActivity"></activity>
-        <activity android:name=".viewmodel.ViewModelActivity"></activity>
-        <activity android:name=".id.IDActivity"></activity>
+        <activity android:name=".uitest.SystemUiActivity"></activity>
+        <activity android:name=".uitest.GestureActivity" />
+        <activity android:name=".livedatatest.SwitchMapActivity" />
+        <activity android:name=".livedatatest.TransformationsActivity" />
+        <activity android:name=".coroutine.CoroutineActivity" />
+        <activity android:name=".viewmodel.ViewModelActivity" />
+        <activity android:name=".id.IDActivity" />
         <activity android:name=".fragmentest.FragmentLifeCycleActivity" />
         <activity android:name=".uitest.editviewtest.EditerViewActivity" />
         <activity
@@ -22,7 +26,7 @@
                 android:name=".uitest.FullscreenActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:label="@string/title_activity_fullscreen"
-                android:theme="@style/FullscreenTheme"></activity>
+                android:theme="@style/FullscreenTheme" />
         <activity
                 android:name=".databindingtest.DatabindingActivity"
                 android:label="DatabindingActivity" />
@@ -39,7 +43,7 @@
         <activity
                 android:name=".launchmodetest.LaunchModeActivityMain"
                 android:label="AAA_ActivityMain" />
-        <activity android:name=".livedatatest.LiveDataTestActivity"></activity>
+        <activity android:name=".livedatatest.LiveDataTestActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
