@@ -21,7 +21,6 @@ class CoroutineActivity : AppCompatActivity() {
             val c=a+b
             Log.d("xxx",c.toString())
             Log.d("xxx",lifecycle.currentState.toString())
-
         }
         Log.d("xxx","over")
     }
@@ -34,7 +33,7 @@ class CoroutineActivity : AppCompatActivity() {
 
     suspend fun do2():Int{
         Log.d("xxx","do2")
-        delay(5000)
+        delay(2000)
         return 2
     }
 }
