@@ -9,7 +9,37 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".uitest.SystemUiActivity"></activity>
+        <activity android:name=".share.OtherActivity">
+            <intent-filter>
+            <action android:name="android.intent.action.SEND" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
+            <data android:mimeType="text/rtf"/>
+        </intent-filter>
+
+            <meta-data
+                    android:name="android.service.chooser.chooser_target_service"
+                    android:value="androidx.sharetarget.ChooserTargetServiceCompat" />
+        </activity>
+        <activity android:name=".share.ReceiveActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.service.chooser.chooser_target_service"
+                    android:value="androidx.sharetarget.ChooserTargetServiceCompat" />
+        </activity>
+        <activity android:name=".share.ShareActivity">
+
+        </activity>
+        <activity android:name=".livedatatest.JavaActivity" />
+        <activity android:name=".uitest.SystemUiActivity" />
         <activity android:name=".uitest.GestureActivity" />
         <activity android:name=".livedatatest.SwitchMapActivity" />
         <activity android:name=".livedatatest.TransformationsActivity" />
@@ -42,7 +72,11 @@
                 android:label="AAA_ActivityA" />
         <activity
                 android:name=".launchmodetest.LaunchModeActivityMain"
-                android:label="AAA_ActivityMain" />
+                android:label="AAA_ActivityMain" >
+            <meta-data
+                    android:name="android.app.shortcuts"
+                    android:resource="@xml/shortcuts" />
+        </activity>
         <activity android:name=".livedatatest.LiveDataTestActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

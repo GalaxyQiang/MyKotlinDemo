@@ -21,6 +21,7 @@ import com.john.history.mykotlindemo.livedatatest.MediatorLiveDataActivity
 import com.john.history.mykotlindemo.livedatatest.SwitchMapActivity
 import com.john.history.mykotlindemo.livedatatest.TransformationsActivity
 import com.john.history.mykotlindemo.recycleviewtest.RecycleViewActivity
+import com.john.history.mykotlindemo.share.ShareActivity
 import com.john.history.mykotlindemo.uitest.GestureActivity
 import com.john.history.mykotlindemo.uitest.SystemUiActivity
 import com.john.history.mykotlindemo.viewmodel.ViewModelActivity
@@ -42,6 +43,7 @@ class MainAdapter(var data: List<String>): androidx.recyclerview.widget.Recycler
         val context:Context=viewholder.button.context
         viewholder.button.text=destination
         when(destination){
+            "ShareActivity"-> viewholder.button.setOnClickListener { context.startActivity(Intent(context, ShareActivity::class.java)) }
             "SystemUiActivity"-> viewholder.button.setOnClickListener { context.startActivity(Intent(context, SystemUiActivity::class.java)) }
             "GestureActivity"-> viewholder.button.setOnClickListener { context.startActivity(Intent(context, GestureActivity::class.java)) }
             "SwitchMapActivity"-> viewholder.button.setOnClickListener { context.startActivity(Intent(context, SwitchMapActivity::class.java)) }

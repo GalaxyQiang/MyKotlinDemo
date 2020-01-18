@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val data= listOf<String>(
-            "SystemUiActivity",
+            "SystemUiActivity","ShareActivity",
             "SwitchMapActivity","GestureActivity",
             "MediatorLiveDataActivity","TransformationsActivity",
             "CoroutineActivity","RecycleViewActivity","DatabindingActivity",

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <share-target android:targetClass="com.john.history.mykotlindemo.share.ReceiveActivity">
+        <data android:mimeType="text/plain" />
+        <category android:name="com.john.history.mykotlindemo.share.category.TEXT_SHARE_TARGET" />
+    </share-target>
+
+    <share-target android:targetClass="com.john.history.mykotlindemo.share.OtherActivity">
+        <data android:mimeType="text/rtf" />
+        <category android:name="com.john.history.mykotlindemo.share.category.TEXT_SHARE_TARGET" />
+    </share-target>
+</shortcuts>
